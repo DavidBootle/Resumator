@@ -1,11 +1,41 @@
-<script setup></script>
+<script setup>
+  import { resumeData } from './resumeData';
+  import Header from './Header.vue';
+
+  function generate() {
+    
+  }
+</script> 
 
 <template>
-  <h1>You did it!</h1>
-  <p>
-    Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-    documentation
-  </p>
+  <Header
+    :data="resumeData.header"
+  ></Header>
 </template>
 
-<style scoped></style>
+<style>
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+#app {
+  padding: 0.75in;
+  width: 8.5in;
+  height: 11in;
+}
+/* Target the print media type */  
+@media print {  
+  /* Define print page settings */  
+  @page {
+    size: auto;  /* Use the printer's default paper size */  
+    margin: 0mm; /* Remove all margins (no space for headers/footers) */
+  }  
+ 
+  /* Optional: Reset body margins to avoid extra space */  
+  body {  
+    margin: 0;  
+    padding: 0;  
+  }  
+}  
+</style>

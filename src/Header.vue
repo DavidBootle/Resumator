@@ -1,0 +1,59 @@
+<script setup>
+    import { ref } from 'vue';
+
+    defineProps(['data']);
+
+    let isNameShown = ref(true);
+    let isPhoneShown = ref(true);
+    let isEmailShown = ref(true);
+    let isWebsiteShown = ref(true);
+    let isAddressShown = ref(true);
+</script>
+
+<template>
+    <div class="header">
+        <div v-if="isNameShown" @click="isNameShown = !isEmailShown" class="name">{{ data.name }}</div>
+        <div class="row">
+            <div v-if="isEmailShown" @click="isEmailShown = !isEmailShown" class="row-content">{{ data.email }}</div>
+            <div v-if="isPhoneShown" @click="isPhoneShown = !isPhoneShown" class="row-content">{{ data.phone }}</div>
+            <div v-if="isWebsiteShown" @click="isWebsiteShown = !isWebsiteShown" class="row-content">{{ data.website }}</div>
+        </div>
+        <div v-if="isAddressShown" @click="isAddressShown = !isAddressShown" class="row-content">{{ data.address }}</div>
+    </div>
+</template>
+
+<style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.name {
+    font-family: 'Oswald';
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.row-content {
+    font-size: 15px;
+    font-family: 'Oswald';
+}
+
+.row > *:not(:last-child)::after {
+  content: "|";
+  margin: 10px;
+}
+</style>
