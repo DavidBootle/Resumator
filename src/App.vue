@@ -3,9 +3,7 @@
   import Header from './Header.vue';
   import Education from './Education.vue';
   import SectionHeader from './SectionHeader.vue';
-import Experience from './Experience.vue';
-
-  console.log(resumeData.education);
+  import Experience from './Experience.vue';
 
 </script> 
 
