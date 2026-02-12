@@ -12,7 +12,7 @@
 
 <template>
     <div class="header">
-        <div v-if="isNameShown" @click="isNameShown = !isEmailShown" class="name">{{ data.name }}</div>
+        <div v-if="isNameShown" @click="isNameShown = !isNameShown" class="name">{{ data.name }}</div>
         <div class="row">
             <div v-if="isEmailShown" @click="isEmailShown = !isEmailShown" class="row-content">{{ data.email }}</div>
             <div v-if="isPhoneShown" @click="isPhoneShown = !isPhoneShown" class="row-content">{{ data.phone }}</div>
@@ -23,7 +23,6 @@
 </template>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 .header {
     display: flex;
@@ -37,6 +36,7 @@
     font-family: 'Oswald';
     font-size: 40px;
     font-weight: bold;
+    font-variant: small-caps;
 }
 
 .row {
