@@ -3,6 +3,7 @@
   import Header from './Header.vue';
   import Education from './Education.vue';
   import SectionHeader from './SectionHeader.vue';
+import Experience from './Experience.vue';
 
   console.log(resumeData.education);
 
@@ -15,6 +16,7 @@
   <SectionHeader name="Education"/>
   <Education v-for="education in resumeData.education" v-bind:key="education.name" :data="education"/>
   <SectionHeader name="Experience"/>
+  <Experience v-for="experience in resumeData.experience" v-bind:key="experience.name" :data="experience"/>
 </template>
 
 <style>
