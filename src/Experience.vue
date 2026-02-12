@@ -1,10 +1,24 @@
 <script setup>
 import { ref } from 'vue';
 
-defineProps(['data']);
+const props = defineProps(['data']);
 
 let isShown = ref(true);
-let isDescriptionShown = ref(true);
+let description = ref(
+    Array.isArray(props.data.description)
+        ? [...props.data.description]
+        : props.data.description
+);
+
+const removeDescriptionLineItem = (index) => {
+    if (!Array.isArray(description.value)) return;
+
+    description.value.splice(index, 1);
+
+    if (!description.value.length) {
+        description.value = null;
+    }
+};
 </script>
 
 <template>
@@ -19,11 +33,11 @@ let isDescriptionShown = ref(true);
                 <div>{{ data.location }}</div>
             </div>
         </div>
-        <div v-if="isDescriptionShown && data.description" @click.stop="isDescriptionShown = false" class="experience-description">
-            <div v-if="Array.isArray(data.description)">
-                <div v-for="item in data.description" v-bind:key="item">• {{ item }}</div>
+        <div v-if="description" @click.stop class="experience-description">
+            <div v-if="Array.isArray(description)">
+                <div v-for="(item, index) in description" v-bind:key="`${item}-${index}`" @click.stop="removeDescriptionLineItem(index)">• {{ item }}</div>
             </div>
-            <div v-else>{{ data.description }}</div>
+            <div v-else>{{ description }}</div>
         </div>
     </div>
 </template>
