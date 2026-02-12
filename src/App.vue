@@ -33,7 +33,7 @@ html, body {
   width: 8.5in;
   height: 11in;
   border: 1px solid black;
-  overflow: hidden;
+  overflow: scroll;
 }
 
 /* Target the print media type */  
@@ -46,6 +46,7 @@ html, body {
 
   #app {
     border: none;
+    overflow: hidden;
   }
  
   /* Optional: Reset body margins to avoid extra space */  
