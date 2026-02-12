@@ -20,7 +20,10 @@ let isDescriptionShown = ref(true);
             </div>
         </div>
         <div v-if="isDescriptionShown && data.description" @click.stop="isDescriptionShown = false" class="experience-description">
-            <i>{{ data.description }}</i>
+            <div v-if="Array.isArray(data.description)">
+                <div v-for="item in data.description" v-bind:key="item">• {{ item }}</div>
+            </div>
+            <div v-else>{{ data.description }}</div>
         </div>
     </div>
 </template>
@@ -61,5 +64,6 @@ let isDescriptionShown = ref(true);
 
 .experience-description {
     text-align: justify;
+    padding-left: 16px;
 }
 </style>

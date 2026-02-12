@@ -29,7 +29,21 @@ const resumeData = {
             position: 'Owner/Founder',
             location: 'Charleston, SC',
             timeRange: '2020-2022',
-            description: `Founded a tech support venture serving individuals with troubleshooting and installation needs. Hosted free monthly Q&A sessions at the senior center, offering complimentary on-site support for attendees.`
+            description: [
+                "Founded a tech support venture serving individuals with troubleshooting and installation needs.",
+                "Hosted free monthly Q&A sessions at the senior center, offering complimentary on-site support for attendees."
+            ]
+        },
+        {
+            name: 'Ztech Solutions',
+            position: 'I.T. Support Specialist',
+            location: 'Charleston, SC',
+            timeRange: '2020-2022',
+            description: [
+                "Engaged directly with clients, handling hardware installations and software troubleshooting.",
+                "Safely transported and set up advanced technology equipment for educational institutions and businesses.",
+                "Demonstrated professionalism and independence, empowering the company to expand its client base."
+            ]
         }
     ]
 }
