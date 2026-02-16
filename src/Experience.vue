@@ -46,7 +46,7 @@ const removeDescriptionLineItem = (index) => {
 .experience-container {
     margin-top: 8px;
     padding-left: 18px;
-    width: calc(100%-18px);
+    width: calc(100% - 18px);
     font-family: 'Oswald';
     font-size: 16px;
     font-weight: 300;
