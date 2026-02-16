@@ -10,11 +10,19 @@
 <template>
   <Header
     :data="resumeData.header"
-  ></Header>
+  />
   <SectionHeader name="Education"/>
-  <Education v-for="education in resumeData.education" v-bind:key="education.name" :data="education"/>
+  <Education
+    v-for="education in resumeData.education"
+    v-bind:key="education.name"
+    :data="education"
+  />
   <SectionHeader name="Experience"/>
-  <Experience v-for="experience in resumeData.experience" v-bind:key="experience.name" :data="experience"/>
+  <Experience
+    v-for="experience in resumeData.experience"
+    v-bind:key="experience.name"
+    :data="experience"
+  />
 </template>
 
 <style>
