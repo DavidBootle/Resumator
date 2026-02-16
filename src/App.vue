@@ -42,6 +42,12 @@ html, body {
   overflow: scroll;
 }
 
+a {
+  color: black;
+  text-decoration: none;
+  pointer-events: none;
+}
+
 /* Target the print media type */  
 @media print {  
   /* Define print page settings */  
@@ -60,5 +66,10 @@ html, body {
     margin: 0;  
     padding: 0;  
   }  
+
+  a {
+    text-decoration: underline;
+    pointer-events: all;
+  }
 }  
 </style>
