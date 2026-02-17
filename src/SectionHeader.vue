@@ -13,10 +13,10 @@
 <style scoped>
 .section-header {
   font-family: 'Oswald';
-  font-size: 20px;
+  font-size: 14pt;
   width: 100%;
   border-bottom: 1px solid black;
-  margin-top: 12px;
+  margin-top: 0.1in;
   font-variant: small-caps;
   font-weight: 600;
 }

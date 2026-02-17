@@ -41,7 +41,7 @@
 
 .name {
     font-family: 'Oswald';
-    font-size: 40px;
+    font-size: 28pt;
     font-weight: bold;
     font-variant: small-caps;
 }
@@ -55,7 +55,7 @@
 }
 
 .row-content {
-    font-size: 15px;
+    font-size: 11pt;
     font-family: 'Oswald';
     display: flex;
     flex-direction: row;
@@ -72,7 +72,7 @@
 
 .row > *:not(:last-child)::after {
   content: "|";
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 0.1in;
+  margin-right: 0.1in;
 }
 </style>

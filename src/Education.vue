@@ -27,11 +27,11 @@
 <style scoped>
 
 .education-container {
-    margin-top: 8px;
-    padding-left: 18px;
-    width: calc(100% - 18px);
+    margin-top: 0.1in;
+    padding-left: 0.25in;
+    width: calc(100% - 0.25in);
     font-family: 'Oswald';
-    font-size: 16px;
+    font-size: 11pt;
     font-weight: 300;
 }
 

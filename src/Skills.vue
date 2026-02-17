@@ -31,14 +31,16 @@ function removeItem(value) {
 <style scoped>
 
 .skills-container {
-    margin-left: 20px;
+    margin-left: 0.25in;
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(7, 1fr);
+    margin-top: 0.1in;
 }
 
 .skill-item {
     font-family: 'Oswald';
     font-weight: 300;
+    font-size: 11pt;
 }
 
 </style>
