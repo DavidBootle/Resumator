@@ -65,7 +65,7 @@ const resumeData = {
             timeRange: '2022-2024',
             location: 'Clemson, SC',
             description: [
-                "Collaborating with researchers to craft hardware and software enhancing data collection and processing using MATLAB, Python, Simulink, and Arduino.",
+                "Collaborated with researchers to craft hardware and software enhancing data collection and processing using MATLAB, Python, Simulink, and Arduino.",
                 "Created Advanced Reactor Control via OPC in Python (ARCOpy) to interface with AMBR robotic system, allowing for previously impossible experiments and automation."
             ]
         },
