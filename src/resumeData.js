@@ -113,6 +113,43 @@ const resumeData = {
                 "Hosted free monthly Q&A sessions at the senior center, offering complimentary on-site support for attendees."
             ]
         }
-    ]
+    ],
+    skills: [
+        "AngularJS",
+        "TypeScript",
+        "C#",
+        "Elasticsearch",
+        "FPGA",
+        "Vivado",
+        "KiCAD",
+        "OnShape",
+        "Solidworks",
+        "C",
+        "C++",
+        "x86 Assembly",
+        "Flutter/Dart",
+        "Swift/SwiftUI",
+        "Objective-C",
+        "Google Firebase",
+        "Hardware Repair",
+        "Docker",
+        "Selenium",
+        "Python Flask",
+        "Express.js",
+        "Node.js",
+        "MATLAB",
+        "Vue",
+        "React",
+        "Python",
+        "Arduino",
+        "Soldering",
+        "SASS",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Java",
+        "Next.js",
+        "Xcode"
+    ].sort()
 }
 export { resumeData };

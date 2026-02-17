@@ -4,6 +4,7 @@
   import Education from './Education.vue';
   import SectionHeader from './SectionHeader.vue';
   import Experience from './Experience.vue';
+  import Skills from './Skills.vue';
 
 </script> 
 
@@ -22,6 +23,10 @@
     v-for="experience in resumeData.experience"
     v-bind:key="experience.name"
     :data="experience"
+  />
+  <SectionHeader name="Skills"/>
+  <Skills
+    :data="resumeData.skills"
   />
 </template>
 
