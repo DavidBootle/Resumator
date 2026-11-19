@@ -3,7 +3,7 @@ const resumeData = {
         name: 'David Bootle',
         email: 'davidtbootle@gmail.com',
         phone: '(843)-754-6115',
-        address: '5497 Rosedale Dr, King George, VA',
+        address: '5497 Rosedale Dr, King George VA, 22485',
         website: 'davidbootle.com',
         linkedin: 'david-bootle'
     },
